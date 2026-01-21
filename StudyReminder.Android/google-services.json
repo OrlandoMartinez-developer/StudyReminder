@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "789444702476",
+    "project_id": "studyreminder-19cfa",
+    "storage_bucket": "studyreminder-19cfa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789444702476:android:804206f7a0cdffbbdd5929",
+        "android_client_info": {
+          "package_name": "StudyReminder.Android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdUOnd2RYn5mFV9vOI4Hqev2W8CeqWkJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
