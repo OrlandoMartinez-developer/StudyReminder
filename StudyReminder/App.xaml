@@ -27,6 +27,16 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+            <Color x:Key="PrimaryColor">#6C63FF</Color>
+            <Color x:Key="SecondaryColor">#4CAF50</Color>
+            <Color x:Key="AccentColor">#FF6B6B</Color>
+            <Color x:Key="BackgroundColor">#F8F9FA</Color>
+            <Color x:Key="SurfaceColor">#FFFFFF</Color>
+            <Color x:Key="TextColor">#2C3E50</Color>
+            <Color x:Key="SubtextColor">#7F8C8D</Color>
+            <Color x:Key="GradientStart">#667EEA</Color>
+            <Color x:Key="GradientEnd">#764BA2</Color>
+            <Color x:Key="CardShadow">#20000000</Color>
         </ResourceDictionary>        
     </Application.Resources>
 </Application>
