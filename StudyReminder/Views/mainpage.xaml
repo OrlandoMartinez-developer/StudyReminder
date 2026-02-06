@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyReminder.Views.AboutPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Paleta de colores mejorada -->
+            <Color x:Key="PrimaryColor">#6C63FF</Color>
+            <Color x:Key="PrimaryDark">#5848CC</Color>
+            <Color x:Key="SecondaryColor">#4CAF50</Color>
+            <Color x:Key="AccentColor">#FF6B6B</Color>
+            <Color x:Key="AccentLight">#FFE66D</Color>
+            <Color x:Key="BackgroundColor">#F5F7FA</Color>
+            <Color x:Key="SurfaceColor">#FFFFFF</Color>
+            <Color x:Key="TextColor">#2C3E50</Color>
+            <Color x:Key="SubtextColor">#95A5A6</Color>
+            <Color x:Key="BorderColor">#E8ECF1</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView BackgroundColor="{StaticResource BackgroundColor}">
+        <Grid Padding="30,60,30,30"
+              RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,*"
+              RowSpacing="25">
+
+            <!-- Decoración superior -->
+            <BoxView Grid.Row="0"
+                     Color="{StaticResource PrimaryColor}"
+                     Opacity="0.1"
+                     HeightRequest="150"
+                     WidthRequest="150"
+                     CornerRadius="75"
+                     HorizontalOptions="Start"
+                     VerticalOptions="Start"
+                     Margin="-75,-120,0,0"/>
+
+            <!-- Título principal -->
+            <StackLayout Grid.Row="0" 
+                        HorizontalOptions="Center"
+                        Spacing="8"
+                        Margin="0,0,0,10">
+                <Label Text="StudyReminder"
+                       FontSize="42"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="{StaticResource PrimaryColor}"/>
+                <Label Text="Tu asistente de estudio personal"
+                       FontSize="15"
+                       HorizontalOptions="Center"
+                       TextColor="{StaticResource SubtextColor}"/>
+            </StackLayout>
+
+            <!-- Logo con anillos decorativos -->
+            <Grid Grid.Row="1"
+                  HeightRequest="200"
+                  WidthRequest="200"
+                  HorizontalOptions="Center"
+                  Margin="0,20,0,0">
+
+                <!-- Anillo exterior -->
+                <Frame CornerRadius="100"
+                       HeightRequest="200"
+                       WidthRequest="200"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       Opacity="0.1"
+                       HasShadow="False"
+                       Padding="0"/>
+
+                <!-- Anillo medio -->
+                <Frame CornerRadius="85"
+                       HeightRequest="170"
+                       WidthRequest="170"
+                       BackgroundColor="{StaticResource AccentColor}"
+                       Opacity="0.15"
+                       HasShadow="False"
+                       Padding="0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <!-- Logo principal -->
+                <Frame CornerRadius="70"
+                       HeightRequest="140"
+                       WidthRequest="140"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       HasShadow="True"
+                       Padding="20"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                    <Image Source="logo.png"
+                           Aspect="AspectFit"/>
+                </Frame>
+            </Grid>
+
+            <!-- Características en tarjetas -->
+            <Grid Grid.Row="2"
+                  ColumnDefinitions="*,*,*"
+                  ColumnSpacing="12"
+                  Margin="0,20,0,0">
+
+                <!-- Tarjeta 1 -->
+                <Frame Grid.Column="0"
+                       Padding="15,20"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       BackgroundColor="{StaticResource SurfaceColor}"
+                       BorderColor="{StaticResource BorderColor}">
+                    <StackLayout Spacing="8">
+                        <Frame CornerRadius="20"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               BackgroundColor="{StaticResource PrimaryColor}"
+                               Opacity="0.15"
+                               HasShadow="False"
+                               Padding="0"
+                               HorizontalOptions="Center">
+                            <Label Text="📚"
+                                   FontSize="22"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Frame>
+                        <Label Text="Organiza"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="{StaticResource TextColor}"/>
+                        <Label Text="tus tareas"
+                               FontSize="10"
+                               HorizontalOptions="Center"
+                               TextColor="{StaticResource SubtextColor}"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Tarjeta 2 -->
+                <Frame Grid.Column="1"
+                       Padding="15,20"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       BackgroundColor="{StaticResource SurfaceColor}"
+                       BorderColor="{StaticResource BorderColor}">
+                    <StackLayout Spacing="8">
+                        <Frame CornerRadius="20"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               BackgroundColor="{StaticResource SecondaryColor}"
+                               Opacity="0.15"
+                               HasShadow="False"
+                               Padding="0"
+                               HorizontalOptions="Center">
+                            <Label Text="⏰"
+                                   FontSize="22"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Frame>
+                        <Label Text="Recuerda"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="{StaticResource TextColor}"/>
+                        <Label Text="a tiempo"
+                               FontSize="10"
+                               HorizontalOptions="Center"
+                               TextColor="{StaticResource SubtextColor}"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Tarjeta 3 -->
+                <Frame Grid.Column="2"
+                       Padding="15,20"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       BackgroundColor="{StaticResource SurfaceColor}"
+                       BorderColor="{StaticResource BorderColor}">
+                    <StackLayout Spacing="8">
+                        <Frame CornerRadius="20"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               BackgroundColor="{StaticResource AccentColor}"
+                               Opacity="0.30"
+                               HasShadow="False"
+                               Padding="0"
+                               HorizontalOptions="Center">
+                            <Label Text="🎯"
+                                   FontSize="22"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Frame>
+                        <Label Text="Alcanza"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="{StaticResource TextColor}"/>
+                        <Label Text="tus metas"
+                               FontSize="10"
+                               HorizontalOptions="Center"
+                               TextColor="{StaticResource SubtextColor}"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+            <!-- Estadísticas o beneficios -->
+
+
+            
+            <!--<Frame Grid.Row="3"
+                   Padding="20"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="{StaticResource PrimaryColor}"
+                   Margin="0,10,0,0">
+                <Grid ColumnDefinitions="*,*,*">
+                    <StackLayout Grid.Column="0" Spacing="5">
+                        <Label Text="100+"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Usuarios"
+                               FontSize="11"
+                               TextColor="White"
+                               Opacity="0.8"
+                               HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                    <BoxView Grid.Column="0"
+                             Color="White"
+                             Opacity="0.3"
+                             WidthRequest="1"
+                             HorizontalOptions="End"
+                             Margin="0,5"/>
+
+                    <StackLayout Grid.Column="1" Spacing="5">
+                        <Label Text="4.8★"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Rating"
+                               FontSize="11"
+                               TextColor="White"
+                               Opacity="0.8"
+                               HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                    <BoxView Grid.Column="1"
+                             Color="White"
+                             Opacity="0.3"
+                             WidthRequest="1"
+                             HorizontalOptions="End"
+                             Margin="0,5"/>
+
+                    <StackLayout Grid.Column="2" Spacing="5">
+                        <Label Text="500+"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               HorizontalOptions="Center"/>
+                        <Label Text="Tareas"
+                               FontSize="11"
+                               TextColor="White"
+                               Opacity="0.8"
+                               HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Grid>
+            </Frame>-->
+
+            <!-- Botón principal -->
+            <Button Grid.Row="4"
+                    Text="COMENZAR AHORA"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource PrimaryColor}"
+                    CornerRadius="28"
+                    HeightRequest="56"
+                    Margin="0,25,0,0"/>
+
+            <!-- Botón secundario -->
+            <Frame Grid.Row="5"
+                   Padding="0"
+                   CornerRadius="28"
+                   HasShadow="False"
+                   BackgroundColor="Transparent"
+                   BorderColor="{StaticResource PrimaryColor}"
+                   HeightRequest="56"
+                   Margin="0,10,0,0">
+                <Button Text="YA TENGO CUENTA"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource PrimaryColor}"
+                        BackgroundColor="Transparent"/>
+            </Frame> 
+
+            <!-- Footer -->
+            <StackLayout Grid.Row="6"
+                        Spacing="5"
+                        VerticalOptions="End"
+                        Margin="0,30,0,10">
+                <Label Text="Versión 1.0.0"
+                       FontSize="12"
+                       TextColor="{StaticResource SubtextColor}"
+                       HorizontalOptions="Center"/>
+                <Label Text="Hecho con ❤️ para estudiantes"
+                       FontSize="11"
+                       TextColor="{StaticResource SubtextColor}"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <!-- Decoración inferior -->
+            <BoxView Grid.Row="6"
+                     Color="{StaticResource AccentLight}"
+                     Opacity="0.1"
+                     HeightRequest="120"
+                     WidthRequest="120"
+                     CornerRadius="60"
+                     HorizontalOptions="End"
+                     VerticalOptions="End"
+                     Margin="0,0,-60,60"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>
